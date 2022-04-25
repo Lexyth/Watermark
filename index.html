@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/scripts/watermark.js"></script>
+  </head>
+  <body>
+    <div id="container"></div>
+    <script>
+      // simple composite image
+      watermark(['assets/photo.jpg', 'assets/logo.png'])
+        .image(watermark.image.lowerRight())
+        .then(function (img) {
+          var pre = document.querySelector('#composite-image pre');
+          pre.parentNode.insertBefore(img, pre);
+    </script>
+  </body>
+</html>
