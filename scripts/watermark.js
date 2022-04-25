@@ -792,10 +792,15 @@ function release(result, pool, parameters) {
 
 
 function watermark(resources) {
+  alert("1");
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+  alert("2");
   var promise = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  alert("3");
   var opts = mergeOptions(options);
+  alert("4");
   promise || (promise = image_load(resources, opts.init));
+  alert("5");
   return {
     /**
      * Convert the watermarked image into a dataUrl. The draw
