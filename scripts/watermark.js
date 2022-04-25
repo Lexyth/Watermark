@@ -792,6 +792,7 @@ function release(result, pool, parameters) {
 
 
 function watermark(resources) {
+  alert("watermarking");
   var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
   var promise = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
   var opts = mergeOptions(options);
